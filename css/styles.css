@@ -27,6 +27,7 @@ body {
 /* header*/
 .container {
   padding: 0 16px;
+  justify-content: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -74,6 +75,7 @@ body {
   padding-right: 16px;
   padding-bottom: 24px;
 }
+
 /* first section*/
 .section {
   padding: 96px 0;
@@ -90,7 +92,7 @@ body {
   background-size: cover;
   margin: 0 auto;
   max-width: auto;
-  padding: 112px 0;
+  padding: 112px 54px;
 }
 .banner {
   color: var(--WHITE);
@@ -266,7 +268,121 @@ body {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px 16px;
+  justify-content: center;
+}
+/* footer*/
+.footer {
+  background-color: var(--NAVY-BLUE);
+  color: var(--CLOUD);
+  padding: 96px 0;
+}
+.left-footer {
+}
+.logo-footer {
+  margin-bottom: 16px;
+}
+.footer .studio {
+  color: var(--CLOUD);
+}
+.footer-paragraph {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  font-size: 16px;
+  color: var(--CLOUD);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  max-width: 264px;
+}
+.social-media-text {
+  color: var(--WHITE);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.socia-media-footer-li {
+  height: 40px;
+  width: 40px;
+  list-style: none;
+}
+.social-media-list-footer {
+  display: flex;
+  gap: 18px;
+}
+.social-link-footer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--IRIS);
+  border-radius: 50%;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--GREEN);
+}
+.sm-footer-icons {
+  fill: var(--CLOUD);
+}
+.subscribe-text {
+  color: var(--WHITE);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 16px;
+  gap: 16px;
+  margin-left: 80px;
+}
+.input-email {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--NAVY-BLUE);
+  padding-left: 16px;
+  outline: none;
+  color: var(--WHITE);
+}
+.subscribe-text .input-email::placeholder {
+  color: var(--WHITE);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.48px;
+}
+.hidden-subscribe {
+  visibility: hidden;
+}
+.subscribe-button {
+  display: inline-flex;
+  padding: 8px 24px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: var(--IRIS);
+  border: none;
+  color: var(--WHITE);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 24px;
+}
+.subscribe-button:focus,
+.subscribe-button:hover {
+  background-color: var(--OCEAN);
 }
 
 /* style ze strony*/
@@ -353,11 +469,9 @@ font-weight: 400;
   flex-basis: calc((100% - 72px) / 4);
   margin-top: 0;
 }*/
-.footer {
-  background-color: var(--NAVY-BLUE);
-  color: var(--CLOUD);
+/*.footer {
   padding: 100px 0;
-}
+}*/
 .footer-logo {
   color: var(--IRIS);
   font-family: "Raleway", sans-serif;
@@ -369,24 +483,14 @@ font-weight: 400;
   text-transform: uppercase;
 }
 
-.footer-paragraph {
+/*.footer-paragraph {
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-  font-size: 16px;
-  color: var(--CLOUD);
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  max-width: 264px;
-}
+}*/
 
-.footer .studio {
-  color: var(--CLOUD);
-}
-.logo-footer {
+/*.logo-footer {
   display: inline-block;
   margin-bottom: 16px;
-}
+}*/
 
 .section-portfolio {
   padding: 96px 0 120px 0;
@@ -585,20 +689,13 @@ img {
   border-radius: 4px;
 }
 
-.left-footer {
+/*.left-footer {
   margin-right: 120px;
-}
+}*/
 
-.social-media-footer {
+/*.socia-media-footer-li {
   display: flex;
-  gap: 16px;
-}
-.socia-media-footer-li {
-  display: flex;
-  height: 40px;
-  width: 40px;
-  list-style: none;
-}
+}*/
 
 .customer-link {
   width: 100%;
@@ -622,40 +719,17 @@ img {
   width: 168px;
   height: 88px;
 }
-.footer-container {
+/*.footer-container {
   align-items: baseline;
   display: flex;
   justify-content: flex-start;
-}
-.social-media-text {
-  color: var(--WHITE);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  margin-bottom: 16px;
-  font-size: 16px;
-}
-.social-media-list-footer {
+}*/
+
+/*.social-media-list-footer {
   display: flex;
   gap: 16px;
-}
-.sm-footer-icons {
-  fill: var(--CLOUD);
-}
-.social-link-footer {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  background-color: var(--IRIS);
-  border-radius: 50%;
-  justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link-footer:hover,
-.social-link-footer:focus {
-  background-color: var(--GREEN);
-}
+}*/
+
 .backdrop {
   position: fixed;
   inset: 0 0 auto;
@@ -910,12 +984,12 @@ img {
   background-color: var(--OCEAN);
   border-radius: 2px;
 }
-.subscribe-form {
+/*.subscribe-form {
   display: flex;
   align-items: center;
-}
+}*/
 
-.subscribe-text {
+/*.subscribe-text {
   color: var(--WHITE);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -927,50 +1001,4 @@ img {
   gap: 16px;
   align-items: flex-start;
   margin-left: 80px;
-}
-.subscribe-button {
-  display: inline-flex;
-  padding: 8px 24px;
-  align-items: center;
-  gap: 16px;
-  border-radius: 4px;
-  background: var(--IRIS);
-  border: none;
-  color: var(--WHITE);
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 24px;
-}
-.subscribe-button:focus,
-.subscribe-button:hover {
-  background-color: var(--OCEAN);
-}
-
-.input-email {
-  width: 264px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid var(--WHITE);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: var(--NAVY-BLUE);
-  padding-left: 16px;
-  outline: none;
-  color: var(--WHITE);
-}
-.subscribe-text .input-email::placeholder {
-  color: var(--WHITE);
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2;
-  letter-spacing: 0.48px;
-}
-.hidden-subscribe {
-  visibility: hidden;
-}
+}*/
