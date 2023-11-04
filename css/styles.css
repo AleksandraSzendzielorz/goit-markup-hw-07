@@ -338,6 +338,11 @@ body {
   font-size: 16px;
   gap: 16px;
   margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-left: 0;
 }
 .input-email {
   width: 264px;
@@ -383,6 +388,13 @@ body {
 .subscribe-button:focus,
 .subscribe-button:hover {
   background-color: var(--OCEAN);
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  text-align: center;
+  align-items: center;
 }
 
 /* style ze strony*/
@@ -720,8 +732,9 @@ img {
   height: 88px;
 }
 /*.footer-container {
+  flex-direction: row;
   align-items: baseline;
-  display: flex;
+  text-align: start;
   justify-content: flex-start;
 }*/
 
