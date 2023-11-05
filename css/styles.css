@@ -40,7 +40,7 @@ body {
 .link {
   text-decoration: none;
 }
-.logo_element {
+t {
   color: var(--NAVY-BLUE);
 }
 .list .link {
@@ -62,6 +62,22 @@ body {
   position: absolute;
   right: 16px;
 }
+.menu-toggle {
+  border: none;
+  background-color: var(--WHITE);
+  position: absolute;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
 .logo-header {
   margin-right: 16px;
 }
@@ -72,7 +88,9 @@ body {
   padding-right: 16px;
   padding-bottom: 24px;
 }
-
+.js-open-menu {
+  min-width: 40px;
+}
 /* first section*/
 .section {
   padding: 96px 0;
@@ -466,23 +484,11 @@ body {
   max-width: 328px;
   margin-top: 48px;
 }
-/* ze strony przykładowej*/
-
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
+.js-close-menu {
+  width: 24px;
+  height: 24px;
 }
+/* ze strony przykładowej*/
 
 @media (min-width: 768px) {
   .menu-toggle {
@@ -515,7 +521,6 @@ body {
 
 .menu-container .menu-toggle {
   position: absolute;
-  position: absolute;
   top: 24px;
   right: 24px;
   float: right;
@@ -523,10 +528,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   display: flex;
-  align-items: center;
   background-color: var(--WHITE);
   border-radius: 50%;
-  justify-content: center;
   cursor: pointer;
   fill: var(--NAVY-BLUE);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
