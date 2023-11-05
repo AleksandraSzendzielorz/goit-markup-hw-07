@@ -291,6 +291,8 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
   max-width: 264px;
+  text-align: justify;
+  margin-top: 16px;
 }
 .social-media-text {
   color: var(--WHITE);
@@ -428,7 +430,42 @@ body {
   text-transform: capitalize;
   text-decoration: none;
 }
-
+.menu-bottom {
+  margin-top: 284px;
+}
+.menu-contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.menu-number {
+  text-decoration: none;
+  color: var(--IRIS);
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.menu-mail {
+  text-decoration: none;
+  color: var(--SLATE);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.icon-list-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 328px;
+  margin-top: 48px;
+}
 /* ze strony przykładowej*/
 
 .menu-toggle {
