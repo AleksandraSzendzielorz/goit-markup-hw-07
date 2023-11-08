@@ -37,10 +37,12 @@ h6,
 p {
   margin: 0;
 }
-/*Style dla teleofonu*/
+/*Style dla telefonu*/
 /* header*/
 .container {
   padding: 0 16px;
+  max-width: 480px;
+  margin: auto;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -121,7 +123,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  max-width: auto;
+  max-width: 1440px;
   padding: 112px 54px;
 }
 @media (min-device-pixel-ratio: 2),
@@ -799,9 +801,12 @@ p {
   list-style: none;
 }
 
-/* ze strony przykładowej*/
-/*header*/
 @media (min-width: 768px) {
+  .container {
+    padding: 0 16px;
+    max-width: 768px;
+  }
+
   .list {
     display: flex;
     flex-wrap: wrap;
@@ -1149,7 +1154,7 @@ p {
 
   .container {
     justify-content: center;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 15px;
     max-width: 1158px;
   }
